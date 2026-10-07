@@ -1,0 +1,57 @@
+[
+    {
+        "type": "text",
+        "question": "What is the main objective of the company?",
+        "expected_answer": "Maximizing production efficiency.",
+        "expected_document": "production_report.pdf",
+        "expected_page": 1
+    },
+    {
+        "type": "table",
+        "question": "Which quarter had the highest production?",
+        "expected_answer": "Q4",
+        "expected_document": "production_report.pdf",
+        "expected_page": 2
+    },
+    {
+        "type": "chart",
+        "question": "According to the production chart, which quarter had the highest production efficiency?",
+        "expected_answer": "Q4",
+        "expected_document": "production_report.pdf",
+        "expected_page": 3
+    },
+    {
+        "type": "graph",
+        "question": "How did production efficiency change from Q2 to Q4?",
+        "expected_answer": "It increased from 78% to 84% according to the chart, or 86% according to the table.",
+        "expected_document": "production_report.pdf",
+        "expected_page": 3
+    },
+    {
+        "type": "multimodal",
+        "question": "Compare production efficiency between Q2 and Q4 and identify the main reasons for the change.",
+        "expected_answer": "Efficiency increased. Reasons include reduced machine downtime, improved scheduling, automation, and better resource allocation.",
+        "expected_document": "production_report.pdf",
+        "expected_page": [1, 2, 3]
+    },
+    {
+        "type": "calculation",
+        "question": "What was the percentage increase in production from Q2 to Q4?",
+        "expected_answer": "25% (from 12,000 to 15,000)",
+        "expected_document": "production_report.pdf",
+        "expected_page": 2
+    },
+    {
+        "type": "cross_document",
+        "question": "Compare the revenue growth in financial_report.pdf with the production growth in production_report.pdf.",
+        "expected_answer": "Revenue grew from $10M to $20M while production grew from 10,000 to 15,000 units.",
+        "expected_document": ["production_report.pdf", "financial_report.pdf"]
+    },
+    {
+        "type": "conflict",
+        "question": "Is there any inconsistency between the efficiency table and chart for Q4?",
+        "expected_answer": "Yes, the table says 86% and the chart says 84%.",
+        "expected_document": "production_report.pdf",
+        "expected_page": [2, 3]
+    }
+]
